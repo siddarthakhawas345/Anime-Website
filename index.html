@@ -1,0 +1,22 @@
+const db = globalThis.__B44_DB__ || { auth:{ isAuthenticated: async()=>false, me: async()=>null }, entities:new Proxy({}, { get:()=>({ filter:async()=>[], get:async()=>null, create:async()=>({}), update:async()=>({}), delete:async()=>({}) }) }), integrations:{ Core:{ UploadFile:async()=>({ file_url:'' }) } } };
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://db.com/logo_v2.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AnimeVerse - Your ultimate anime streaming destination. Watch the latest episodes, discover trending series, and explore a vast library of anime movies and shows." />
+    <meta name="keywords" content="anime, streaming, watch anime, anime online, subbed, dubbed, manga, otaku" />
+    <meta property="og:title" content="AnimeVerse - Stream Anime Online" />
+    <meta property="og:description" content="Watch the latest anime episodes, trending series, and classic movies in HD quality." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0f1117" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>AnimeVerse - Stream Anime Online</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
